@@ -1,0 +1,14 @@
+import math
+import time
+
+def calculate_arrangements(n):
+    # This represents the Brute Force search space (n!)
+    arrangements = math.factorial(n)
+    return arrangements
+
+students = [5, 10, 15, 20, 50]
+
+print("Class Size | Possible Seating Arrangements")
+print("-" * 40)
+for s in students:
+    print(f"{s} students | {calculate_arrangements(s)}")
